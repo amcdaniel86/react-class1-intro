@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // above, somewhere in Component class, jsx is involved for use inside react apps. requires render functions, a return statement. and within the return statement jsx is expected to interpolate.
-import logo from './logo.svg';
 import './App.css';
 // can import different css files to different components, each one and other components will have different styles.
 
@@ -90,9 +89,34 @@ class App extends Component {
         {/* taken from above. */}
         {theDiv}
 
+const element = <div tabIndex="0"></div>;
 
+const element = <img src={user.avatarUrl}></img>;
+{/* // embedding a js expression in an atribute. */}
 
+{/* // example: we type
+  const element = (
+  <h1 className="greeting">
+      Hello, world!
+      </h1>
+      );
 
+      how Babel compiles the code.
+    const element = React.createElement(
+      'h1',
+        {className: 'greeting'},
+        'Hello, world!'
+    );
+
+    React.createElement creates an object similar to this:
+    const element = {
+      type: 'h1',
+      props: {
+        className: 'greeting',
+        children: 'Hello, world!'
+      }
+    };
+) */}
 
 
       </div>
