@@ -133,3 +133,34 @@ export default App;
 
 // interpolate jsx is similar to handlebars in fucntionality. interpolation within the div in react, with one handlebar (curly brace.) {theWord}
 
+// component tree is a typical React app. one root component named App.js, and potential infinite amount of nested child components.
+
+// components can be classes or functions. functional components can receive props but they don't have the state.
+
+// the state: to define a React component as a Class by extending it with React.component:
+
+// example: 
+import React from 'react';
+
+    class Welcome extends React.Component 
+        {
+        render() {
+          // jsx goes here
+        }
+     }
+
+// More commonly - 
+import React, { Component } from 'react';
+
+    class Welcome extends Component {
+      render() {
+        // jsx goes here
+      }
+    }
+    // here we extend our class (Welcome class) with Component wthat we import from React, so we inherit all its properties and methods.
+
+    // Importing React from react library is required because its responsible for rendering anything to the DOM.
+
+    // components are like javascript functions. they accept inputs (called props) and return React elements describing what should appear on the screen.
+
+    
